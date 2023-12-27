@@ -1,28 +1,53 @@
 {
     "name": "rollup-plugin-path-rewrite",
     "version": "1.0.0",
-    "description": "Rollup plugin for rewriting the output file path",
-    "license": "ISC",
+    "description": "Rollup plugin for rewriting the output file/directory path",
+    "license": "MIT",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/Grumaks/rollup-plugin-path-rewrite.git"
     },
-    "author": "",
+    "author": "Maksim Grushchenko",
     "homepage": "https://github.com/Grumaks/rollup-plugin-path-rewrite#readme",
     "bugs": {
         "url": "https://github.com/Grumaks/rollup-plugin-path-rewrite/issues"
     },
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+    "main": "./dist/cjs/index.js",
+    "module": "./dist/es/index.js",
+    "exports": {
+        "types": "./types/index.d.ts",
+        "import": "./dist/es/index.js",
+        "default": "./dist/cjs/index.js"
     },
-    "dependencies": {},
+    "scripts": {
+        "build": "rm -rf dist && rollup -c",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "typings": "tsc --project tsconfig.typings.json"
+    },
+    "files": [
+        "dist",
+        "!dist/**/*.map",
+        "types",
+        "README.md",
+        "LICENSE"
+    ],
+    "peerDependencies": {
+        "rollup": "^1.20.0||^2.0.0||^3.0.0||^4.0.0"
+    },
+    "peerDependenciesMeta": {
+        "rollup": {
+            "optional": true
+        }
+    },
     "devDependencies": {
+        "@rollup/plugin-typescript": "^11.1.5",
         "@typescript-eslint/eslint-plugin": "^6.15.0",
         "@typescript-eslint/parser": "^6.15.0",
         "eslint": "^8.56.0",
         "eslint-config-prettier": "^9.1.0",
         "eslint-config-rollup": "^3.0.1",
+        "rollup": "^4.9.1",
         "typescript": "^5.3.3"
-    }
+    },
+    "types": "./types/index.d.ts"
 }
