@@ -1,5 +1,5 @@
 import type { Plugin } from "rollup";
-interface PathRewriteOptions {
+export interface PathRewriteOptions {
     /**
      * A RegExp to match the target file/directory name(s).
      */
@@ -9,8 +9,4 @@ interface PathRewriteOptions {
      */
     replaceTo: string | ((fileName: string) => string);
 }
-export default function pathRewrite({
-    test,
-    replaceTo,
-}: PathRewriteOptions): Plugin;
-export {};
+export default function pathRewrite({ test, replaceTo, }: PathRewriteOptions): Plugin;

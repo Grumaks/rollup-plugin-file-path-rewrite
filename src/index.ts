@@ -1,6 +1,6 @@
 import type { Plugin, RollupError } from "rollup";
 
-interface PathRewriteOptions {
+export interface PathRewriteOptions {
     /**
      * A RegExp to match the target file/directory name(s).
      */
