@@ -9,4 +9,7 @@ export interface PathRewriteOptions {
      */
     replaceTo: string | ((fileName: string) => string);
 }
-export default function pathRewrite({ test, replaceTo, }: PathRewriteOptions): Plugin;
+export default function pathRewrite({
+    test,
+    replaceTo,
+}: PathRewriteOptions): Plugin;

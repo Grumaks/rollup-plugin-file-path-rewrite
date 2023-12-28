@@ -34,6 +34,7 @@ export default function pathRewrite({
                 }
             } catch (error) {
                 const rollupError: RollupError = {
+                    // eslint-disable-next-line  @typescript-eslint/no-explicit-any
                     message: (error as any).toString(),
                     cause: error,
                     plugin: PLUGIN_NAME,
