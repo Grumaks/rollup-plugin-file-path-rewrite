@@ -56,5 +56,17 @@
         "ts-jest": "^29.1.1",
         "typescript": "^5.3.3"
     },
-    "types": "./types/index.d.ts"
+    "types": "./types/index.d.ts",
+    "keywords": [
+        "rollup-plugin",
+        "rollup",
+        "plugin",
+        "path",
+        "rewrite",
+        "replace",
+        "output",
+        "directory",
+        "file",
+        "path rewrite"
+    ]
 }
