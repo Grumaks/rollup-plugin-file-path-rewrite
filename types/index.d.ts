@@ -5,7 +5,7 @@ export interface PathRewriteOptions {
      */
     test: RegExp;
     /**
-     * A string or a function that returns a string to replace the matched file/directory name(s).
+     * A string or a function that returns a new path to replace the matched paths.
      */
     replaceTo: string | ((fileName: string) => string);
 }
