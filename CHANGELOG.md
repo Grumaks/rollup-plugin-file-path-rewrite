@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Grumaks/rollup-plugin-path-rewrite/compare/v1.0.0...v1.0.1) (2023-12-30)
+
+
+### Bug Fixes
+
+* fix release to npm process ([d46e99b](https://github.com/Grumaks/rollup-plugin-path-rewrite/commit/d46e99b4f4664befc4cfdce1c4c44ff0517eb066))
+
 ## 1.0.0 (2023-12-30)
 
 
