@@ -1,4 +1,5 @@
 [![Node.js CI](https://github.com/Grumaks/rollup-plugin-path-rewrite/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/Grumaks/rollup-plugin-path-rewrite/actions/workflows/node.js.yml)
+[![NPM version](https://img.shields.io/npm/v/rollup-plugin-path-rewrite.svg?style=flat)](https://npmjs.com/package/rollup-plugin-path-rewrite)
 
 # rollup-plugin-path-rewrite
 
