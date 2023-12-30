@@ -2,13 +2,13 @@ import type { Plugin, RollupError } from "rollup";
 
 export interface PathRewriteOptions {
     /**
-     * A RegExp to match the target file/directory name(s).
+     * A RegExp to match the target paths.
      */
     test: RegExp;
     /**
      * A string or a function that returns a new path to replace the matched paths.
      */
-    replaceTo: string | ((fileName: string) => string);
+    replaceTo: string | ((path: string) => string);
 }
 
 const PLUGIN_NAME = "path-rewrite";

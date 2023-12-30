@@ -38,8 +38,8 @@ export default {
         // ...other plugins...
         pathRewrite({
             test: /.d.ts$/i,
-            replaceTo: (fileName) => {
-                return `types/${fileName}`;
+            replaceTo: (path) => {
+                return `types/${path}`;
             },
         }),
     ],
@@ -67,12 +67,12 @@ dist
 
 Type: `RegExp`
 
-A RegExp to match the target file/directory name(s).
+A RegExp to match the target paths.
 
 ### `replaceTo`
 
 Type: `RegExp`
 
-Type: `string` | `(fileName: string) => string`
+Type: `string` | `(path: string) => string`
 
 A string or a function that returns a new path to replace the matched (by `options.test`) paths.
